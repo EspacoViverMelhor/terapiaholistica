@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura total da viewport */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+}
+
+.image-container {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 90%; /* Define uma largura máxima para o contêiner */
+    width: 100%;
+    margin-bottom: 20px; /* Espaço entre a imagem e o botão */
+}
+
+img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar todo o espaço do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+.button-container {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%; /* Faz o contêiner do botão ocupar toda a largura disponível */
+    max-width: 90%; /* Define uma largura máxima para o contêiner */
+    display: flex;
+    justify-content: center;
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+}
+
+.green-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Ajusta o padding para melhorar o visual do botão */
+    font-size: 20px; /* Ajusta o tamanho da fonte do botão */
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto; /* Faz o botão ter uma largura automática */
+}
+
+.green-button:hover {
+    background-color: darkgreen;
+}
